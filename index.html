@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    let hi="H I ";
+    let bag="H I ";
+    function myFunction() {
+//document.getElementById("myDiv").innerHTML="HI";// this code show only "HI" EVERY TIME WHEN YOU HOVER THE DIV
+
+document.getElementById("myDiv").innerHTML=bag;// HERE NEW HI ADDED EVERY TIME WHEN YOU HOVER THE DIV
+bag=bag+hi;
+console.log("min");
+}
+
+function myFunction2(){
+    document.getElementById("myDiv").innerHTML="";
+    console.log("mout");
+}
+
+//SECOND WAY TO DO THIS PROGRAM BUT THIS TIME YOU NEED TO PASS PARAMETER
+
+// function myFunction(x){
+//     // x.style.backgroundColor="yellow";
+//     // x.style.padding="50px";
+//     x.innerHTML="hi";
+//     console.log("min")
+// }
+// function myFunction2(y){
+//     // y.style.backgroundColor="yellow";
+//     // y.style.padding="50px";
+//     y.innerHTML="";
+//     console.log("mout")
+// }
+var h=21;
+if(h>=18){
+    console.log(" print form ta seassion yes");
+}else{
+    console.log("no");
+}
+
+
+</script>
+
+<p>In this example, the yelllow div will get a new Hi every time you mouse over it:</p>
+
+<div style="padding:50px; background:yellow;" onmouseover="myFunction()" onmouseout="myFunction2()" id="myDiv" class="cha"> </div>
+
+</body>
+</html>
+
